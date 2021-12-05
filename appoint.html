@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Meta tags -->
+	<title>Adomefeh-Health: Appointment form</title>
+	<meta name="keywords" content="" />
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+</head>
+<body>
+	<div class="w3ls-banner">
+	<div class="heading">
+		<h1>Appointment Form</h1>
+	</div>
+		<div class="container">
+			<div class="heading">
+				<h2>Please Enter Patients Details and known ailments</h2>
+				<p>Fill the form below and submit your query with as much known information regarding your checkup. Thank you, we will see you soon!</p>
+			</div>
+			<div class="agile-form">
+
+<form name="contactform" method="post" action="send_form_email.php">
+<table width="450px">
+<tr>
+ <td valign="top">
+  <label for="first_name">First Name *</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="first_name" maxlength="50" size="30">
+ </td>
+</tr>
+<tr>
+ <td valign="top"">
+  <label for="last_name">Last Name *</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="last_name" maxlength="50" size="30">
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+  <label for="email">Email Address *</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="email" maxlength="80" size="30">
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+  <label for="telephone">Telephone Number</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="telephone" maxlength="30" size="30">
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+  <label for="comments">Reason for booking/Peronal need*</label>
+ </td>
+ <td valign="top">
+  <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+ </td>
+</tr>
+<tr>
+ <td colspan="2" style="text-align:center">
+  <input class="submit-btn" type="submit" value="Submit"> 
+ </td>
+</tr>
+</table>
+</form>
+
+
+
+
+		<!--
+
+
+				<form method="post" action="mailto:cpimcadomfeh@gmail.com">
+					<ul class="field-list">
+						<li>
+							<label class="form-label"> 
+								Full Name 
+								<span class="form-required"> * </span>
+							</label>
+							<div class="form-input">
+								<input type="text" name="patient_name" placeholder="Enter Patients Name" required >
+							</div>
+						</li>
+						<li>
+							<label class="form-label">
+							   Gender
+							   <span class="form-required"> * </span>
+							</label>
+							<div class="form-input">
+								<select class="form-dropdown" name="gender" required>
+									<option value="">&nbsp;</option>
+									<option value="Male"> Male </option>
+									<option value="Female"> Female </option>
+								<!--	<option value="Transgender"> Transgender </option> -->
+
+								<!--
+								</select>
+							</div>
+						<li>
+						<li> 
+							<label class="form-label">
+							   Mobile Number
+							   <span class="form-required"> * </span>
+							</label>
+							<div class="form-input">
+								<input type="text" name="mobile_number" placeholder="Mobile Number" required >
+							</div>
+						</li>
+						<li>
+							<label class="form-label">
+							   Date of Birth
+							   <span class="form-required"> * </span>
+							</label>
+							<div class="form-input dob">
+								<span class="form-sub-label">
+									<select name="day" class="day">
+										<option>&nbsp;</option>
+										<option value="1"> 1 </option>
+										<option value="2"> 2 </option>
+										<option value="3"> 3 </option>
+										<option value="4"> 4 </option>
+										<option value="5"> 5 </option>
+										<option value="6"> 6 </option>
+										<option value="7"> 7 </option>
+										<option value="8"> 8 </option>
+										<option value="9"> 9 </option>
+										<option value="10"> 10 </option>
+										<option value="11"> 11 </option>
+										<option value="12"> 12 </option>
+										<option value="13"> 13 </option>
+										<option value="14"> 14 </option>
+										<option value="15"> 15 </option>
+										<option value="16"> 16 </option>
+										<option value="17"> 17 </option>
+										<option value="18"> 18 </option>
+										<option value="19"> 19 </option>
+										<option value="20"> 20 </option>
+										<option value="21"> 21 </option>
+										<option value="22"> 22 </option>
+										<option value="23"> 23 </option>
+										<option value="24"> 24 </option>
+										<option value="25"> 25 </option>
+										<option value="26"> 26 </option>
+										<option value="27"> 27 </option>
+										<option value="28"> 28 </option>
+										<option value="29"> 29 </option>
+										<option value="30"> 30 </option>
+										<option value="31"> 31 </option>
+									</select>
+									<label class="form-sub-label1"> Day </label>
+								</span>
+								<span class="form-sub-label">
+									<select name="month">
+										<option>&nbsp;</option>
+										<option value="January"> January </option>
+										<option value="February"> February </option>
+										<option value="March"> March </option>
+										<option value="April"> April </option>
+										<option value="May"> May </option>
+										<option value="June"> June </option>
+										<option value="July"> July </option>
+										<option value="August"> August </option>
+										<option value="September"> September </option>
+										<option value="October"> October </option>
+										<option value="November"> November </option>
+										<option value="December"> December </option>
+									 </select>
+									<label class="form-sub-label1"> Month </label>
+								</span>
+								<span class="form-sub-label">
+									<input type="text" class="year" name="year" placeholder=" Enter Year" required>
+									<label class="form-sub-label1"> Year </label>
+								</span>
+							</div>
+						</li>
+						<li> 
+							<label class="form-label">
+							   Address
+							   <span class="form-required"> * </span>
+							</label>
+							<div class="form-input add">
+								<span class="form-sub-label">
+									<input type="text" name="street_address" placeholder=" " required>
+									<label class="form-sub-label1"> Street Address </label>
+								</span>
+								<span class="form-sub-label">
+									<input type="text" name="street_address2" placeholder=" " >
+									<label class="form-sub-label1"> Street Line 2 </label>
+								</span>
+								<span class="form-sub-label">
+									<input type="text" name="city" placeholder=" " required>
+									<label class="form-sub-label1"> City </label>
+								</span>
+								<span class="form-sub-label">
+									<input type="text" name="state" placeholder=" " required>
+									<label class="form-sub-label1"> State / Province </label>
+								</span>
+								<span class="form-sub-label">
+									<input type="text" name="zipcode" placeholder=" " required>
+									<label class="form-sub-label1"> Postal / Zip Code </label>
+								</span>
+								<span class="form-sub-label">
+									<input type="text" name="country" placeholder=" " required>
+									<label class="form-sub-label1"> Country </label>
+								</span>
+							</div>
+						</li>
+						<li> 
+							<label class="form-label">
+							   E-Mail Address
+							   <span class="form-required"> * </span>
+							</label>
+							<div class="form-input">
+								<input type="email" name="email" placeholder="myname@example.com" required>
+							
+							</div>
+						</li>
+						<li> 
+							<label class="form-label1">
+								Mention the details.
+							</label>
+							<div class="form-input2">
+								<textarea rows="5" cols="20" name="textarea"></textarea>
+							
+							</div>
+						</li>
+						<li class="last-type"> 
+							<label class="form-label1">
+								Select which types of appointment you require.
+								<span class="form-required"> * </span>
+							</label>
+							<div class="form-input2">
+								<input type="checkbox" name="test1" ><label class="type-of-test">Abdominal Pain</label>
+								<input type="checkbox" name="test2" ><label class="type-of-test">Acute Bronchitis</label>
+								<input type="checkbox" name="test3" ><label class="type-of-test">Acute Deep Vein Thrombosis (DVT)</label>
+								<input type="checkbox" name="test4" ><label class="type-of-test">Acute Venous Embolism Thrombosis</label>
+								<input type="checkbox" name="test5" ><label class="type-of-test">All Headaches (incl. Migraine)</label>
+								<input type="checkbox" name="test6" ><label class="type-of-test">Abdominal Disorders</label>
+								<input type="checkbox" name="test7" ><label class="type-of-test">Anemia</label>
+								<input type="checkbox" name="test8" ><label class="type-of-test">Arthritis</label>
+								<input type="checkbox" name="test9" ><label class="type-of-test">Arthritis of the Elbow</label>
+								<input type="checkbox" name="test10" ><label class="type-of-test">Asthma</label>
+								<input type="checkbox" name="test11" ><label class="type-of-test">Ataxia</label>
+								<input type="checkbox" name="test12" ><label class="type-of-test">Back Pain</label>
+								<input type="checkbox" name="test13" ><label class="type-of-test">Blood Disorders</label>
+								<input type="checkbox" name="test14" ><label class="type-of-test">Blood in Urine (Hematuria)</label>
+								<input type="checkbox" name="test15" ><label class="type-of-test">Bone Disorders</label>
+								<input type="checkbox" name="test16" ><label class="type-of-test">Breast Diseases</label>
+								<input type="checkbox" name="test17" ><label class="type-of-test">Bronchitis</label>
+								<input type="checkbox" name="test18" ><label class="type-of-test">COPD (Chronic Obstructive Pulmonary Disease)</label>
+								<input type="checkbox" name="test19" ><label class="type-of-test">Calcium Metabolism Disorders</label>
+								<input type="checkbox" name="test20" ><label class="type-of-test">Chest Pain</label>
+								
+								<input type="checkbox" name="test21" ><label class="type-of-test">Chronic Deep Vein Thrombosis (DVT)</label>
+								<input type="checkbox" name="test22" ><label class="type-of-test">Chronic Neck Pain</label>
+								<input type="checkbox" name="test23" ><label class="type-of-test">Chronic Pain</label>
+								<input type="checkbox" name="test24" ><label class="type-of-test">Constipation</label>
+								<input type="checkbox" name="test25" ><label class="type-of-test">Coronary Artery Disease (CAD)</label>
+								<input type="checkbox" name="test26" ><label class="type-of-test">Cough</label>
+								<input type="checkbox" name="test27" ><label class="type-of-test">Deep Vein Thrombosis (DVT)</label>
+								<input type="checkbox" name="test28" ><label class="type-of-test">Dermatitis</label>
+	<input type="checkbox" name="test29" ><label class="type-of-test">Diabetes Type 2</label>
+<input type="checkbox" name="test30" ><label class="type-of-test">Diabetic Polyneuropathy</label>
+
+<input type="checkbox" name="test31" ><label class="type-of-test">Diarrhea</label>
+
+<input type="checkbox" name="test32" ><label class="type-of-test">Dizziness</label>
+
+<input type="checkbox" name="test33" ><label class="type-of-test">Dysphagia</label>
+
+<input type="checkbox" name="test34" ><label class="type-of-test">Ear Disorders</label>
+
+<input type="checkbox" name="test35" ><label class="type-of-test">Elbow Injuries</label>
+
+<input type="checkbox" name="test36" ><label class="type-of-test">Enlarged Prostate (BPH)</label>
+
+<input type="checkbox" name="test37" ><label class="type-of-test">Erectile Dysfunction</label>
+
+<input type="checkbox" name="test38" ><label class="type-of-test">Esophageal Diseases</label>
+<input type="checkbox" name="test39" ><label class="type-of-test">Essential Tremor</label>
+<input type="checkbox" name="test40" ><label class="type-of-test">Fever</label>
+<input type="checkbox" name="test41" ><label class="type-of-test">Fibromyalgia</label>
+<input type="checkbox" name="test42" ><label class="type-of-test">Foot Conditions</label>
+<input type="checkbox" name="test43" ><label class="type-of-test">Gait Abnormality</label>
+<input type="checkbox" name="test44" ><label class="type-of-test">Gas-Bloat Syndrome</label>
+<input type="checkbox" name="test45" ><label class="type-of-test">Gastritis</label>
+
+ <input type="checkbox" name="test46" ><label class="type-of-test">Gastroesophageal Reflux Disease (GERD)</label>
+<input type="checkbox" name="test47" ><label class="type-of-test">Gastrointestinal Diseases</label>
+<input type="checkbox" name="test48" ><label class="type-of-test">Gout</label>
+<input type="checkbox" name="test49" ><label class="type-of-test">Headache</label>
+<input type="checkbox" name="test50" ><label class="type-of-test">Heart Disease</label>
+<input type="checkbox" name="test51" ><label class="type-of-test">Heart Palpitations</label>
+<input type="checkbox" name="test52" ><label class="type-of-test">Hip Sprain</label>
+<input type="checkbox" name="test53" ><label class="type-of-test">Hypercalcemia</label>
+<input type="checkbox" name="test54" ><label class="type-of-test">Hyperkalemia</label>
+<input type="checkbox" name="test55" ><label class="type-of-test">Hyperlipidemia</label>
+<input type="checkbox" name="test56" ><label class="type-of-test">Hypertension</label>
+ 
+
+							</div>
+						</li>
+					</ul>
+					<input type="submit" value="Book Appointment">
+				</form>	
+
+				-->
+			</div>
+		</div>
+		<div class="copyright">
+			<p>Adomfeh HealthCare,PLLC</p> 
+		</div>
+	</div>
+</body>
+<!-- stylesheets -->
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/appointstyle.css">
+	<!-- google fonts  -->
+	<link href="//fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i,700" rel="stylesheet">
+</html>
